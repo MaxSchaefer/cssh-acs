@@ -106,5 +106,6 @@ func handleConfig(res http.ResponseWriter, req *http.Request) {
 	log.WithField("user", user.Username).Info("does a config request")
 
 	response := ConfigResponse{Config: user.Config}
+	res.Header().Set("Content-Type", "application/json")
 	_ = json.NewEncoder(res).Encode(response)
 }
