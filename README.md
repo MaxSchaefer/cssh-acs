@@ -3,6 +3,14 @@
 
 [Checkout ContainerSSH](https://github.com/ContainerSSH/ContainerSSH)
 
+### Intention
+
+We at [one medialis](https://medialis.one) would like to give our customers SSH/SFTP access to their websites hosted by us.
+For this we use ContainerSSH to dynamically launch containers with their mounted resources.
+Because ContainerSSH relies on an external auth, cssh-acs provides an easy way to do this.
+
+###### ***NOTE: This is not an official one medialis product***
+
 ### Usage
 
 Example usage
