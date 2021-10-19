@@ -15,13 +15,12 @@ Because ContainerSSH relies on an external auth, cssh-acs provides an easy way t
 
 Example usage
 ```shell
-> docker build -t maxschaefer/cssh-acs .
 > docker run \
     --name cssh-acs
     --detach
     --publish 8080:80
     --volume "$(pwd)/db:/cssh-acs/db"
-    maxschaefer/cssh-acs
+    ghcr.io/maxschaefer/cssh-acs
 ```
 
 ### Database
